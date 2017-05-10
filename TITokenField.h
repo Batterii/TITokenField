@@ -42,6 +42,7 @@
 
 - (BOOL)tokenField:(TITokenField *)field shouldUseCustomSearchForSearchString:(NSString *)searchString;
 - (void)tokenField:(TITokenField *)field performCustomSearchForSearchString:(NSString *)searchString withCompletionHandler:(void (^)(NSArray *results))completionHandler;
+- (void)setResults:(NSMutableArray*)results;
 
 - (void)tokenField:(TITokenField *)tokenField didFinishSearch:(NSArray *)matches;
 - (NSString *)tokenField:(TITokenField *)tokenField displayStringForRepresentedObject:(id)object;

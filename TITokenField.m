@@ -444,6 +444,11 @@
     }
 }
 
+- (void)setResults:(NSMutableArray*)results{
+    _resultsArray = results;
+    [self performSelectorOnMainThread:@selector(reloadResultsTable) withObject:nil waitUntilDone:YES];
+}
+
 
 -(void) reloadResultsTable {
   [_resultsTable setHidden:NO];
